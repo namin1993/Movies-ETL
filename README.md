@@ -12,14 +12,16 @@ Finally, we must carefully merge the dataframes from several files into 1 datafr
 - The ratings.csv file was left off the final git upload since the dataset was too large.
 - On module challenge 8 - Deliverable 4 where we have to create a new ETL_create_database.ipynb file, there is step 2: Remove the statement return wiki_movies_df, movies_with_ratings_df, movies_df. Since the return statement had to be deleted, I had to perform the following steps in order for the remainder of the code in the ETL_create_database.ipynb file to show the dataframes:
 
-1.) Re-download my solved ETL_clean_kaggle_data.ipynb file as a .py file and saved it to the directory of my project.
-2.) Import that file into the ETL_create_database.ipynb as
+1.) Re-download my solved ETL_clean_kaggle_data.ipynb file as a .py file and saved it to the directory of my project.  
+2.) Import that file into the ETL_create_database.ipynb as:  
 ```import ETL_clean_kaggle_data as etl```
-3.) Set up step 12 of the code as:
+3.) Set up step 12 of the code as:  
+
 ```
 # 12. Set the DataFrames from the return statement equal to the file names in Step 11. 
 wiki_movies_df = etl.wiki_movies_df
 movies_with_ratings_df = etl.movies_with_ratings_df
 movies_df = etl.movies_df
 ```
+
 This was the only way I could call variables from the ETL_clean_kaggle_data.ipynb file to the ETL_create_database.ipynb if we're removing the "return" statement.
