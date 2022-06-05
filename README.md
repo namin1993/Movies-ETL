@@ -14,7 +14,8 @@ Finally, we must carefully merge the dataframes from several files into 1 datafr
 
 1.) Re-download my solved ETL_clean_kaggle_data.ipynb file as a .py file and saved it to the directory of my project.  
 2.) Import that file into the ETL_create_database.ipynb as:  
-```import ETL_clean_kaggle_data as etl```. 
+```import ETL_clean_kaggle_data as etl```
+
 3.) Set up step 12 of the code as:  
 
 ```
